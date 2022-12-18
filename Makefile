@@ -181,7 +181,7 @@ ubuntu_local_setenv:
 	rustc --version
 
 # for github codespaces ubuntu with zsh SHELL, need root for sudo
-codespaces_setenv:
+make codespaces_setenv:
 	sudo apt-get update
 	sudo apt install autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev \
               gawk build-essential bison flex texinfo gperf libtool patchutils bc \
